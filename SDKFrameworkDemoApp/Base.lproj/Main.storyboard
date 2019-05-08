@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zTB-Js-n2y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6Pu-T9-Yll">
+            <objects>
+                <viewController id="zTB-Js-n2y" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qmC-j8-eMR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZxH-px-uOP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r8W-xL-GdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42F-lC-VXo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arB-92-JhA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfR-Cx-cer">
+                                <rect key="frame" x="162.5" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bCd-tY-IAO"/>
+                                    <constraint firstAttribute="height" constant="50" id="wC4-fQ-DbB"/>
+                                </constraints>
+                                <state key="normal" image="stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBtn:" destination="zTB-Js-n2y" eventType="touchUpInside" id="Kco-ka-YaN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-g0-9ej">
+                                <rect key="frame" x="252.5" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0er-vh-Ki6"/>
+                                    <constraint firstAttribute="height" constant="50" id="hr5-Sc-KJS"/>
+                                </constraints>
+                                <state key="normal" image="refresh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="zTB-Js-n2y" eventType="touchUpInside" id="54W-aV-u1r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80v-Is-GW8">
+                                <rect key="frame" x="72.5" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CI1-ZL-aqY"/>
+                                    <constraint firstAttribute="width" constant="50" id="FQd-F7-U99"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtn:" destination="zTB-Js-n2y" eventType="touchUpInside" id="QHC-1D-HIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kfR-Cx-cer" firstAttribute="centerX" secondItem="r8W-xL-GdO" secondAttribute="centerX" id="3mg-jg-grh"/>
+                            <constraint firstItem="arB-92-JhA" firstAttribute="top" secondItem="qmC-j8-eMR" secondAttribute="bottom" id="4sh-p5-4Im"/>
+                            <constraint firstItem="42F-lC-VXo" firstAttribute="leading" secondItem="n2q-bn-m7C" secondAttribute="leading" id="9Cm-4u-FYo"/>
+                            <constraint firstItem="MDF-g0-9ej" firstAttribute="leading" secondItem="kfR-Cx-cer" secondAttribute="trailing" constant="40" id="HOk-7a-d0c"/>
+                            <constraint firstItem="kfR-Cx-cer" firstAttribute="leading" secondItem="80v-Is-GW8" secondAttribute="trailing" constant="40" id="QZV-fL-1GQ"/>
+                            <constraint firstItem="42F-lC-VXo" firstAttribute="trailing" secondItem="n2q-bn-m7C" secondAttribute="trailing" id="U8Z-vG-Jcw"/>
+                            <constraint firstItem="ZxH-px-uOP" firstAttribute="top" secondItem="80v-Is-GW8" secondAttribute="bottom" constant="20" id="WBA-7d-ZUy"/>
+                            <constraint firstItem="arB-92-JhA" firstAttribute="leading" secondItem="n2q-bn-m7C" secondAttribute="leading" id="ZJk-yD-ETY"/>
+                            <constraint firstItem="ZxH-px-uOP" firstAttribute="top" secondItem="MDF-g0-9ej" secondAttribute="bottom" constant="20" id="cKg-IJ-xQ7"/>
+                            <constraint firstItem="ZxH-px-uOP" firstAttribute="top" secondItem="arB-92-JhA" secondAttribute="bottom" id="elA-jS-BDD"/>
+                            <constraint firstItem="ZxH-px-uOP" firstAttribute="top" secondItem="42F-lC-VXo" secondAttribute="bottom" id="lSF-78-Qha"/>
+                            <constraint firstItem="arB-92-JhA" firstAttribute="trailing" secondItem="n2q-bn-m7C" secondAttribute="trailing" id="q6U-nj-LaI"/>
+                            <constraint firstItem="42F-lC-VXo" firstAttribute="top" secondItem="qmC-j8-eMR" secondAttribute="bottom" id="vpD-KO-qJG"/>
+                            <constraint firstItem="ZxH-px-uOP" firstAttribute="top" secondItem="kfR-Cx-cer" secondAttribute="bottom" constant="20" id="xNG-vr-Igm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n2q-bn-m7C"/>
+                    </view>
+                    <connections>
+                        <outlet property="ARView" destination="42F-lC-VXo" id="y3f-aS-QWb"/>
+                        <outlet property="sceneView" destination="arB-92-JhA" id="LzU-5r-2kS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIz-qv-673" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349.60000000000002" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh" width="64" height="64"/>
+        <image name="start" width="64" height="64"/>
+        <image name="stop" width="64" height="64"/>
+    </resources>
+</document>

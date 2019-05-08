@@ -1,0 +1,6 @@
+framework module MobioAR {
+  umbrella header "MobioAR.h"
+
+  export *
+  module * { export * }
+}
